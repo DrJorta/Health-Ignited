@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Health Ignited</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-sm shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0 cursor-pointer">
+                        <img src="Content/Screenshot 2025-07-11 at 15-30-33 Health Ignited (copy 1).png" alt="Health Ignited Logo" class="w-12 h-12">
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a 
+                        href="about.html"
+                        class="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+                    >
+                        About
+                    </a>
+                    <a 
+                        href="contact.html"
+                        class="text-blue-600 font-medium border-b-2 border-blue-600"
+                    >
+                        Contact
+                    </a>
+                    <a 
+                        href="book.html"
+                        class="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-2 rounded-full hover:shadow-lg transition-all transform hover:scale-105"
+                    >
+                        BOOK NOW
+                    </a>
+                </div>
+
+                <div class="md:hidden">
+                    <button onclick="toggleMobileMenu()">
+                        <i data-feather="menu" id="menu-icon"></i>
+                        <i data-feather="x" id="close-icon" style="display: none;"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a 
+                    href="about.html"
+                    class="block px-3 py-2 text-gray-700 hover:bg-gray-100 w-full text-left"
+                >
+                    About
+                </a>
+                <a 
+                    href="contact.html"
+                    class="block px-3 py-2 text-blue-600 bg-blue-50 w-full text-left font-medium"
+                >
+                    Contact
+                </a>
+                <a 
+                    href="book.html"
+                    class="block px-3 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg mx-3"
+                >
+                    BOOK NOW
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Page Content -->
+    <div class="min-h-screen pt-20">
+        <section class="py-20 px-4">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-5xl font-light text-gray-800 mb-8 text-center">Get in Touch</h1>
+                <p class="text-xl text-gray-600 text-center mb-12">
+                    Ready to discover what's really happening inside YOUR body? We're excited to meet you!
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <h2 class="text-2xl font-light text-gray-800 mb-6">Contact Information</h2>
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-4">
+                                <i data-feather="phone" class="text-blue-600 mt-1"></i>
+                                <div>
+                                    <p class="font-semibold">Phone</p>
+                                    <a href="tel:954-655-7300" class="text-gray-600 hover:text-blue-600">954-655-7300</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <i data-feather="mail" class="text-blue-600 mt-1"></i>
+                                <div>
+                                    <p class="font-semibold">Email</p>
+                                    <a href="mailto:contact@HealthIgnited.com" class="text-gray-600 hover:text-blue-600">contact@HealthIgnited.com</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <i data-feather="map-pin" class="text-blue-600 mt-1"></i>
+                                <div>
+                                    <p class="font-semibold">Location</p>
+                                    <p class="text-gray-600">Coral Springs, Florida</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <i data-feather="clock" class="text-blue-600 mt-1"></i>
+                                <div>
+                                    <p class="font-semibold">Hours</p>
+                                    <p class="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM</p>
+                                    <p class="text-gray-600">Saturday: 10:00 AM - 2:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-8 p-6 bg-gradient-to-br from-blue-50 to-green-50 rounded-xl">
+                            <h3 class="text-lg font-semibold mb-2">Ready to Start?</h3>
+                            <p class="text-gray-600 mb-4">
+                                Book a consultation to create your personalized health plan.
+                            </p>
+                            <a 
+                                href="book.html"
+                                class="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-2 rounded-full hover:shadow-lg transition-all"
+                            >
+                                Book Now
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="text-2xl font-light text-gray-800 mb-6">Send Us a Message</h2>
+                        <form id="contact-form" class="space-y-4">
+                            <div class="grid grid-cols-2 gap-4">
+                                <input
+                                    type="text"
+                                    placeholder="First Name"
+                                    id="contact-firstName"
+                                    class="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    required
+                                />
+                                <input
+                                    type="text"
+                                    placeholder="Last Name"
+                                    id="contact-lastName"
+                                    class="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    required
+                                />
+                            </div>
+                            <input
+                                type="email"
+                                placeholder="Email"
+                                id="contact-email"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                required
+                            />
+                            <textarea
+                                placeholder="Message"
+                                rows="6"
+                                id="contact-message"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                required
+                            ></textarea>
+                            <button
+                                type="submit"
+                                class="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white py-3 rounded-lg hover:shadow-lg transition-all flex items-center justify-center gap-2"
+                            >
+                                <i data-feather="send"></i>
+                                <span>Send Message</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-8">
+                <div class="flex justify-center mb-4">
+                    <img src="Content/Screenshot 2025-07-11 at 15-30-33 Health Ignited (copy 1).png" alt="Health Ignited Logo" class="w-20 h-20">
+                </div>
+                <p class="text-lg">Health Ignited - Where Science Meets Self-Care</p>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-sm text-center">
+                <p class="mb-4">
+                    © 2025 Health Ignited. All rights reserved.
+                </p>
+                <p class="text-xs leading-relaxed max-w-4xl mx-auto">
+                    <strong>Disclaimer:</strong> The content on this website is for informational and educational purposes only. 
+                    The information contained herein does not constitute medical advice or treatment recommendations. 
+                    Any healthcare decision should be made in consultation with your qualified healthcare provider. 
+                    This information has not been evaluated by the FDA and is not intended to treat or diagnose. 
+                    In case of medical emergency, contact your doctor or call 911 immediately.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Ignited - Where Science Meets Self-Care</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-sm shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0 cursor-pointer">
+                        <img src="Content/Screenshot 2025-07-11 at 15-30-33 Health Ignited (copy 1).png" alt="Health Ignited Logo" class="w-12 h-12">
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a 
+                        href="about.html"
+                        class="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+                    >
+                        About
+                    </a>
+                    <a 
+                        href="contact.html"
+                        class="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+                    >
+                        Contact
+                    </a>
+                    <a 
+                        href="book.html"
+                        class="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-2 rounded-full hover:shadow-lg transition-all transform hover:scale-105"
+                    >
+                        BOOK NOW
+                    </a>
+                </div>
+
+                <div class="md:hidden">
+                    <button onclick="toggleMobileMenu()">
+                        <i data-feather="menu" id="menu-icon"></i>
+                        <i data-feather="x" id="close-icon" style="display: none;"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a 
+                    href="about.html"
+                    class="block px-3 py-2 text-gray-700 hover:bg-gray-100 w-full text-left"
+                >
+                    About
+                </a>
+                <a 
+                    href="contact.html"
+                    class="block px-3 py-2 text-gray-700 hover:bg-gray-100 w-full text-left"
+                >
+                    Contact
+                </a>
+                <a 
+                    href="book.html"
+                    class="block px-3 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg mx-3"
+                >
+                    BOOK NOW
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Page Content -->
+    <div class="min-h-screen">
+        <!-- Hero Section -->
+        <section class="relative h-screen flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0">
+                <img src="Content/Ginger.png" alt="Health Ignited Hero" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black/30"></div>
+            </div>
+            <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+                <h1 class="text-5xl md:text-7xl font-light text-white mb-4 animate-fade-in drop-shadow-lg">
+                    Where Science Meets
+                </h1>
+                <h1 class="text-5xl md:text-7xl font-light text-white mb-8 animate-fade-in-delay drop-shadow-lg">
+                    Self-Care
+                </h1>
+                <p class="text-xl text-white mb-8 animate-fade-in-delay-2 drop-shadow-lg">
+                    Cutting-edge wellness solutions designed to help you reclaim your health
+                </p>
+                <a 
+                    href="book.html"
+                    class="inline-block bg-gradient-to-r from-green-500 to-blue-500 text-white px-8 py-4 rounded-full text-lg hover:shadow-xl transition-all transform hover:scale-105 animate-fade-in-delay-3"
+                >
+                    Start Your Journey
+                </a>
+            </div>
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+                <i data-feather="chevron-down" class="text-white" size="32"></i>
+            </div>
+        </section>
+
+        <!-- Who We Are Section -->
+        <section class="py-20 px-4 bg-white">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-4xl font-light text-gray-800 mb-6">Who We Are</h2>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            <strong>Health Ignited</strong> is a cutting-edge wellness company dedicated to helping individuals <strong>reclaim their health</strong> by addressing the body as a <strong>whole, interconnected system</strong>.
+                        </p>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            We take a <strong>whole body approach</strong>, analyzing key body systems—including <strong>hormones, the immune system, digestive function, detoxification pathways, energy production, nervous system balance, and oxidative stress adaptation</strong>—to identify imbalances and create personalized health solutions.
+                        </p>
+                        <p class="text-gray-600 leading-relaxed">
+                            At <strong>Health Ignited</strong>, we believe that true healing begins when the body's systems are in harmony, allowing individuals to <strong>restore energy, resilience, and overall well-being</strong> so they can thrive in every aspect of life.
+                        </p>
+                    </div>
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-gradient-to-br from-blue-100 to-green-100 rounded-3xl transform rotate-6"></div>
+                        <div class="relative rounded-3xl shadow-xl overflow-hidden h-96">
+                            <img src="Content/Screenshot 2025-07-13 at 14-42-55 Health Ignited.png" alt="Health Research" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end justify-center">
+                                <p class="text-white font-medium mb-6 text-lg">Advanced Research</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Approach Section -->
+        <section class="py-20 px-4 bg-gradient-to-br from-blue-50 to-green-50">
+            <div class="max-w-6xl mx-auto text-center">
+                <h2 class="text-4xl font-light text-gray-800 mb-12">Our Whole Body Approach</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="text-5xl mb-4">🔬</div>
+                        <h3 class="text-xl font-semibold mb-3">Targeted Assessments</h3>
+                        <p class="text-gray-600">Comprehensive analysis of your body's interconnected systems</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="text-5xl mb-4">🌿</div>
+                        <h3 class="text-xl font-semibold mb-3">Customized Nutrition</h3>
+                        <p class="text-gray-600">Personalized nutrition plans tailored to your unique needs</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="text-5xl mb-4">✨</div>
+                        <h3 class="text-xl font-semibold mb-3">Lifestyle Modifications</h3>
+                        <p class="text-gray-600">Sustainable changes that support long-term vitality</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Science Section -->
+        <section class="py-20 px-4 bg-gradient-to-br from-gray-900 to-blue-900 text-white">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-blue-500/20 rounded-3xl blur-xl"></div>
+                        <div class="relative rounded-3xl overflow-hidden h-96">
+                            <img src="Content/Screenshot 2025-07-11 at 15-31-30 About — Health Ignited.png" alt="Science Technology" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end justify-center">
+                                <p class="text-white font-medium mb-6 text-lg">Science-Based Technology</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="text-4xl font-light mb-6">Science-Based Solutions</h2>
+                        <p class="text-gray-300 mb-6 leading-relaxed">
+                            Through targeted assessments, customized nutrition, lifestyle modifications, and personalized supplementation specific to each need, we guide clients back to health and ignite their journey toward optimal function and long-term vitality.
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-3">
+                                <i data-feather="check" class="text-green-400"></i>
+                                <span>Evidence-based protocols</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-feather="check" class="text-green-400"></i>
+                                <span>Cutting-edge diagnostic tools</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-feather="check" class="text-green-400"></i>
+                                <span>Personalized treatment plans</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-feather="check" class="text-green-400"></i>
+                                <span>Continuous monitoring and adjustment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vision Section -->
+        <section class="py-20 px-4 bg-white">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl font-light text-gray-800 mb-8">Our Vision</h2>
+                <p class="text-xl text-gray-600 mb-6 leading-relaxed">
+                    At Health Ignited, we design health solutions one person at a time. Protocols are customized.
+                </p>
+                <p class="text-gray-600 leading-relaxed">
+                    At the forefront of health innovation, our vision is to redefine wellness with cutting-edge solutions that challenge conventional approaches, empowering every individual to achieve a state of optimal health and vitality. Our commitment is to push boundaries, embracing the future of healthcare with transformative technology and personalized strategies.
+                </p>
+            </div>
+        </section>
+
+        <!-- Community Section -->
+        <section class="py-20 px-4 bg-gradient-to-br from-orange-50 to-yellow-50">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-4xl font-light text-gray-800 mb-6">Join Our Community</h2>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            When you choose Health Ignited, you're not just getting a health plan – you're joining a supportive community dedicated to transformation and wellness.
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-3">
+                                <div class="w-2 h-2 bg-orange-400 rounded-full mt-2"></div>
+                                <span class="text-gray-700">Expert guidance every step of the way</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-2 h-2 bg-orange-400 rounded-full mt-2"></div>
+                                <span class="text-gray-700">Ongoing support and accountability</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-2 h-2 bg-orange-400 rounded-full mt-2"></div>
+                                <span class="text-gray-700">Access to cutting-edge resources</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-2 h-2 bg-orange-400 rounded-full mt-2"></div>
+                                <span class="text-gray-700">A community that celebrates your success</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-gradient-to-br from-orange-100 to-yellow-100 rounded-3xl transform -rotate-6"></div>
+                        <div class="relative rounded-3xl shadow-xl overflow-hidden h-96">
+                            <img src="Content/Screenshot 2025-07-11 at 15-31-24 Contact — Health Ignited (copy 1).png" alt="Supportive Community" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end justify-center">
+                                <p class="text-white font-medium mb-6 text-lg">Supportive Community</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20 px-4 bg-gradient-to-r from-blue-600 to-purple-600">
+            <div class="max-w-4xl mx-auto text-center text-white">
+                <h2 class="text-4xl font-light mb-6">Ready to Ignite Your Health?</h2>
+                <p class="text-xl mb-8 opacity-90">
+                    Discover what's really happening inside YOUR body and create a personalized game plan to reclaim your life.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a 
+                        href="book.html"
+                        class="bg-white text-blue-600 px-8 py-4 rounded-full text-lg hover:shadow-xl transition-all transform hover:scale-105"
+                    >
+                        Book a Consultation
+                    </a>
+                    <a 
+                        href="contact.html"
+                        class="border-2 border-white text-white px-8 py-4 rounded-full text-lg hover:bg-white hover:text-blue-600 transition-all"
+                    >
+                        Get in Touch
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Info Footer -->
+        <section class="py-12 px-4 bg-gray-900 text-white">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-8">
+                    <a href="tel:954-655-7300" class="flex items-center gap-2 hover:text-blue-400 transition-colors">
+                        <i data-feather="phone"></i>
+                        <span class="text-lg">954-655-7300</span>
+                    </a>
+                    <a href="mailto:contact@HealthIgnited.com" class="flex items-center gap-2 hover:text-blue-400 transition-colors">
+                        <i data-feather="mail"></i>
+                        <span class="text-lg">contact@HealthIgnited.com</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-8">
+                <div class="flex justify-center mb-4">
+                    <img src="Content/Screenshot 2025-07-11 at 15-30-33 Health Ignited (copy 1).png" alt="Health Ignited Logo" class="w-20 h-20">
+                </div>
+                <p class="text-lg">Health Ignited - Where Science Meets Self-Care</p>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-sm text-center">
+                <p class="mb-4">
+                    © 2025 Health Ignited. All rights reserved.
+                </p>
+                <p class="text-xs leading-relaxed max-w-4xl mx-auto">
+                    <strong>Disclaimer:</strong> The content on this website is for informational and educational purposes only. 
+                    The information contained herein does not constitute medical advice or treatment recommendations. 
+                    Any healthcare decision should be made in consultation with your qualified healthcare provider. 
+                    This information has not been evaluated by the FDA and is not intended to treat or diagnose. 
+                    In case of medical emergency, contact your doctor or call 911 immediately.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

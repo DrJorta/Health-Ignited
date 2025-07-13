@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Health Ignited</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-sm shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0 cursor-pointer">
+                        <img src="Content/Screenshot 2025-07-11 at 15-30-33 Health Ignited (copy 1).png" alt="Health Ignited Logo" class="w-12 h-12">
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a 
+                        href="about.html"
+                        class="text-blue-600 font-medium border-b-2 border-blue-600"
+                    >
+                        About
+                    </a>
+                    <a 
+                        href="contact.html"
+                        class="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+                    >
+                        Contact
+                    </a>
+                    <a 
+                        href="book.html"
+                        class="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-2 rounded-full hover:shadow-lg transition-all transform hover:scale-105"
+                    >
+                        BOOK NOW
+                    </a>
+                </div>
+
+                <div class="md:hidden">
+                    <button onclick="toggleMobileMenu()">
+                        <i data-feather="menu" id="menu-icon"></i>
+                        <i data-feather="x" id="close-icon" style="display: none;"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a 
+                    href="about.html"
+                    class="block px-3 py-2 text-blue-600 bg-blue-50 w-full text-left font-medium"
+                >
+                    About
+                </a>
+                <a 
+                    href="contact.html"
+                    class="block px-3 py-2 text-gray-700 hover:bg-gray-100 w-full text-left"
+                >
+                    Contact
+                </a>
+                <a 
+                    href="book.html"
+                    class="block px-3 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg mx-3"
+                >
+                    BOOK NOW
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Page Content -->
+    <div class="min-h-screen pt-20">
+        <section class="py-20 px-4">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-5xl font-light text-gray-800 mb-12 text-center">About Health Ignited</h1>
+                
+                <div class="prose prose-lg mx-auto">
+                    <p class="text-gray-600 mb-8 text-lg leading-relaxed">
+                        Health Ignited represents a revolutionary approach to wellness, where cutting-edge science meets personalized self-care. We're not just another wellness company – we're your partners in creating lasting health transformation.
+                    </p>
+
+                    <h2 class="text-3xl font-light text-gray-800 mb-6 mt-12">Our Philosophy</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        We believe that true health isn't achieved through quick fixes or one-size-fits-all solutions. Instead, it emerges when we understand and address the body as a complex, interconnected system. Every individual is unique, and so should be their path to wellness.
+                    </p>
+
+                    <h2 class="text-3xl font-light text-gray-800 mb-6 mt-12">What Sets Us Apart</h2>
+                    <div class="grid md:grid-cols-2 gap-6 mb-12">
+                        <div class="bg-gradient-to-br from-blue-50 to-green-50 rounded-xl p-6">
+                            <h3 class="text-xl font-semibold mb-3">Whole Body Integration</h3>
+                            <p class="text-gray-600">We don't just treat symptoms – we uncover root causes by examining how all your body systems work together.</p>
+                        </div>
+                        <div class="bg-gradient-to-br from-blue-50 to-green-50 rounded-xl p-6">
+                            <h3 class="text-xl font-semibold mb-3">Personalized Protocols</h3>
+                            <p class="text-gray-600">Every solution is tailored specifically to your unique biochemistry, lifestyle, and health goals.</p>
+                        </div>
+                        <div class="bg-gradient-to-br from-blue-50 to-green-50 rounded-xl p-6">
+                            <h3 class="text-xl font-semibold mb-3">Science-Based Approach</h3>
+                            <p class="text-gray-600">Our methods are grounded in the latest research and proven therapeutic strategies.</p>
+                        </div>
+                        <div class="bg-gradient-to-br from-blue-50 to-green-50 rounded-xl p-6">
+                            <h3 class="text-xl font-semibold mb-3">Ongoing Support</h3>
+                            <p class="text-gray-600">Your journey doesn't end with a plan – we're with you every step of the way.</p>
+                        </div>
+                    </div>
+
+                    <h2 class="text-3xl font-light text-gray-800 mb-6 mt-12">Our Comprehensive Approach</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        We analyze and optimize seven key body systems to create your personalized wellness plan:
+                    </p>
+                    <ul class="list-disc pl-6 text-gray-600 space-y-2 mb-8">
+                        <li><strong>Hormonal Balance</strong> - Optimizing your body's chemical messengers</li>
+                        <li><strong>Immune Function</strong> - Strengthening your natural defense systems</li>
+                        <li><strong>Digestive Health</strong> - Improving nutrient absorption and gut wellness</li>
+                        <li><strong>Detoxification Pathways</strong> - Supporting your body's natural cleansing processes</li>
+                        <li><strong>Energy Production</strong> - Enhancing cellular energy and vitality</li>
+                        <li><strong>Nervous System Balance</strong> - Managing stress and promoting resilience</li>
+                        <li><strong>Oxidative Stress Adaptation</strong> - Protecting against cellular damage</li>
+                    </ul>
+
+                    <div class="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-2xl p-8 mt-12">
+                        <h3 class="text-2xl font-light mb-4">Ready to Transform Your Health?</h3>
+                        <p class="mb-6">Join us on a journey to discover your body's true potential.</p>
+                        <a 
+                            href="book.html"
+                            class="inline-block bg-white text-blue-600 px-6 py-3 rounded-full hover:shadow-lg transition-all"
+                        >
+                            Book Your Consultation
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-8">
+                <div class="flex justify-center mb-4">
+                    <img src="Content/Screenshot 2025-07-11 at 15-30-33 Health Ignited (copy 1).png" alt="Health Ignited Logo" class="w-20 h-20">
+                </div>
+                <p class="text-lg">Health Ignited - Where Science Meets Self-Care</p>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-sm text-center">
+                <p class="mb-4">
+                    © 2025 Health Ignited. All rights reserved.
+                </p>
+                <p class="text-xs leading-relaxed max-w-4xl mx-auto">
+                    <strong>Disclaimer:</strong> The content on this website is for informational and educational purposes only. 
+                    The information contained herein does not constitute medical advice or treatment recommendations. 
+                    Any healthcare decision should be made in consultation with your qualified healthcare provider. 
+                    This information has not been evaluated by the FDA and is not intended to treat or diagnose. 
+                    In case of medical emergency, contact your doctor or call 911 immediately.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
